@@ -1,0 +1,14 @@
+purple:
+    1a11423
+    3d314a
+    684756
+
+greyishred:
+    #323437
+    819595
+    fe4a49 OR fe5d5d
+
+soft black/white/red:
+    191923
+    fbfef9
+    fe5d5d

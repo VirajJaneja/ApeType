@@ -1,0 +1,53 @@
+header{
+    color: #fe5d5d;
+    /* background-color: #fe5d5d; */
+    font-size: larger;
+    /* background-color: yellow; */
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerButton{
+    margin: 3%;
+    background-color: #fe5d5d;
+    color: #2f2f2f;
+    font-size: medium; 
+    /* background-color: yellow; */
+    height: 40px;
+    font-family:fantasy;
+    font-weight: lighter;
+}
+
+
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #2f2f2f;
+    /* background-color: black; */
+}
+
+.typeZone{
+    background-color: #fbfef9;
+    border-radius: 10px;
+    height: 400px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    padding: 5px;
+    border:#fe5d5d solid 5px;
+}
+
+.ClickToStartB{
+    justify-self: center;
+    background-color: #2f2f2f00;
+    border-width: .05px;
+    border-radius: 7px;
+    color: #fe5d5d;
+    font-family:fantasy;
+    font-weight: light;
+    
+}
