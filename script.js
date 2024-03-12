@@ -1,6 +1,22 @@
-// import { generate, count } from "random-words";
+var wordList;
 
+async function loadWordList() {
+    try {
+        const response = await fetch('words.json');
+        wordList = await response.json();
+    } catch{
+        console.log("failure in finding word file");
+    }
+}
+
+async function initialize() {
+    await loadWordList();
+    
+}
 var mode = "Base";
+
+initialize();
+
 
 
 
@@ -10,6 +26,7 @@ function printTest(){
     mode = "HellDivers";
     // console.log(generate());
     // return generate();
+    // console.log(wordList[13213]);
 }
 
 function apeTypeMenuB(){
@@ -19,6 +36,7 @@ function apeTypeMenuB(){
 
 function HellDiversMenuB(){
     console.log("Mode switched to " + mode);
+    printTest();
     mode = "HellDivers";
 }
 
@@ -47,8 +65,13 @@ function startTest(){
 }
 
 function runBaseTest(){
-    var testZone = document.getElementById("typeZoneID").innerHTML = 
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu molestie tellus, non congue elit. In feugiat justo risus, vitae malesuada est ullamcorper nec. Etiam pellentesque fringilla ante in pharetra. Duis nec sapien at tortor sodales auctor. Proin pretium eleifend bibendum. Duis non magna fermentum, fermentum ex sed, lacinia dui. Praesent dolor mi, vehicula at purus ut, pretium posuere nisl. Morbi lobortis magna et lectus finibus lobortis. Mauris mattis dui interdum, sollicitudin odio sit amet, semper leo.";
+    var words = new Array();
+    for(var i = 0;i<45;i++){
+        words.push(wordList[Math.floor(Math.random()*wordList.length-1)]);
+    }
+
+
+    var testZone = document.getElementById("typeZoneID").innerHTML = words;
 }
 
 function runHellDive(){
