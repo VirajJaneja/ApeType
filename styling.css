@@ -22,8 +22,8 @@ header{
 
 
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: #2f2f2f;
     /* background-color: black; */
 }
@@ -37,8 +37,13 @@ body{
     justify-content: center;
     display: flex;
     border-radius: 20px;
-    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: fantasy; */
+    font-weight: bold;
+    font-size: 200%;
+    padding: 50px;
     border:#fe5d5d solid 5px;
+    overflow: hidden;
 }
 
 .ClickToStartB{
@@ -51,3 +56,4 @@ body{
     font-weight: light;
     
 }
+
